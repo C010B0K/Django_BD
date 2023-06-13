@@ -17,7 +17,7 @@ class PriceList(generics.ListAPIView):
     queryset = Price.objects.all()
     serializer_class = PriceSerializers
 
-class ContactstList(generics.ListAPIView):
+class ContactsList(generics.ListAPIView):
     queryset = Contacts.objects.all()
     serializer_class = ContactsSerializers
 

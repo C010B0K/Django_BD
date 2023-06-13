@@ -21,14 +21,14 @@ class Price(models.Model):
 
 
 class Contacts(models.Model):
-    name = models.TextField(blank=True)
-    phone = models.TextField(blank=True)
-    email = models.TextField(blank=True)
-    whats = models.TextField(blank=True)
-    inst = models.TextField(blank=True)
+    name = models.CharField(max_length=255)
+    phone = models.CharField(max_length=13)
+    email = models.CharField(max_length=255)
+    whats = models.CharField(max_length=12)
+    inst = models.CharField(max_length=255)
 
     def __str__(self):
-        return  self.name
+        return self.name
 
 
 
